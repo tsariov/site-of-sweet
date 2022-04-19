@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новини</title>
+ <style>
+    body {
+      background: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      height: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap
+    }
+    
+  .header{
+      justify-content: center;align-items: center;
+      flex-direction: row; display:flex; 
+  }
+
+    sub-menu {
+      width: 100%;
+      height: 51px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sub {
+      width: 65%;
+      min-width: 600px;
+      height: 51px;
+      background: #CB4B6E;
+      border-radius: 45px;
+      border: 1px #CB4B6E solid;
+      display: flex;
+      color: white;
+      font-family: Lucida Sans;
+      font: medium;
+      font-size: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    content {
+      width: 100%;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 20px;
+      align-content:center;
+    }
+
+   footer {
+      width: 100%;
+      height: 240px;
+      display:flex;
+      background: #CB4B6E;
+      margin-top:600px;
+      align-content:center;
+      align-items:center;
+      justify-content:center;
+     margin-top:10%;
+  }
+    
+    .content {
+      width: 100%;
+      height: 1000px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      height: 98px;
+      width: 145px;
+      margin-left: 30px;
+      border: 3px solid;
+      border-radius: 15px;
+      display: flex;
+      margin-right:40px;
+      margin-bottom:5px;
+    }
+
+    .search {
+      width: 445px;
+      height: 32px;
+      border: 1px solid black;
+      border-radius: 18px;
+      margin-left:150px
+    }
+    
+    .tre{
+      width:38px; height:32px;display:flex;; margin-left:5px
+    }
+
+    .cl{
+      color:white; display:flex; font-family:Lucida Sans; width: 400px; font: 10px;height:100px;
+    }
+    
+    .grg{
+  color:white; display:flex; font-family:Lucida Sans;font:semibold; align-items:baseline; width: 142px; height:116px;flex-direction:column;margin-right:30px
+  }
+
+    .grf{
+  color:white; display:flex; font-family:Lucida Sans;font:regular; margin:4px; margin-bottom:10px; font:12px; font-weight:bold;
+}
+
+    .pr_op{
+  margin:1%; font:10px;margin-top:-1px
+}
+
+    .pr{
+  margin:3px; font:10px;
+}
+
+    .hr_fr{
+      width:1px; height:120px; background:white;margin-right:7px;margin-top:25px
+    }
+    
+    .logo_op{
+      width:65px; height:35px;display:flex;
+  }
+
+    .web{ 
+      width:100px; height:35px;display:flex;
+}
+    
+    .oplat{
+    display:flex;
+  }
+
+    .news_txt {
+      display: flex;
+      font-family: Lucida Sans;
+      font: medium;
+      font-size: 28px;
+      justify-content: center;
+      margin-top: 3px
+    }
+
+    .news {
+      display:flex;
+      align-items:center;
+      flex-direction:column;
+      align-content:center;
+    }
+
+    .news_table {
+      display: flex;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+
+    .img_card {
+      display: flex;
+      width: 145px;
+      height: 132px;
+      justify-content:center;
+    }
+
+    .card {
+      display: flex;
+      border: 1px solid black;
+      border-radius: 15px;
+      height: 240px;
+      width: 180px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 5px;
+    }
+
+    .card_txt {
+      display: flex;
+      margin-top: -30px;
+      margin: 4px;
+      display: flex;
+      font-family: Lucida Sans;
+      font: medium;
+      font-size: 20px;
+      align-content:center;
+    }
+    
+  .zaka
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header"><img src="photo/1.png" class="logo" alt="error">
+      <div class="search"></div><div class="tre"><img src="photo/search.png" alt="error"></div>
+    </div>
+  </header>
+  <sub-menu>
+    <div class="sub">
+      <a href="index.html" style="color: white">Головна</a>
+      <a href="pro_nas.html" style="color: white">Про нас</a>
+      <a href="zakaz.html" style="color: white">Замовлення товару</a>
+      <a href="news.html" style="color: white">Новини</a>
+      <a href="kontakt.html" style="color: white">Контакти</a>
+    </div>
+  </sub-menu>
+  <content>
+   <div class="news">
+        <div class="news_txt">Новинки</div>
+        <table class="news_table">
+          <tr>
+            <td>
+              <div class="card"><img src="photo/tort-esterhazi.png" class="img_card" alt="error">
+                <div class="card_txt">Торт «Естерхазі»<br>890 грн</div></div>
+            </td>
+            <td>
+              <div class="card"><img src="photo/pechivo_lovita.png" class="img_card" alt="error">
+                <div class="card_txt">Lovita Classic з какао 150г<br>23,40 грн</div></div>
+            </td>
+            <td>
+              <div class="card"><img src="photo/croissant with milk.png" class="img_card" alt="error">
+                <div class="card_txt">Mr. Croissant with milk-vanilla filling 0,045 кг<br>6 грн./шт</div></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card"><img src="photo/O`damer.png" class="img_card" alt="error">
+                <div class="card_txt">Цукерки O'Damer Lukas 2,5кг<br>277.50 грн./ящик</div></div>
+            </td>
+            <td>
+              <div class="card"><img src="photo/hit.jpg" class="img_card" alt="error">
+                <div class="card_txt">Печиво Bahlzen HIT Wanilowyn Ванільне, 220 г<br>34 грн</div></div>
+            </td>
+            <td>
+              <div class="card"><img src="photo/oreo.jpg" class="img_card" alt="error">
+                <div class="card_txt">Oreo, Печиво з полуничною начинкою, 154 г
+<br>43,00 грн</div></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+  </content>
+  <footer>
+    <div class="oplat" >
+      <img src="photo/paypal.png" class="logo_op" alt="error">
+      <img src="photo/Mastercard-logo.svg" class="logo_op" alt="error">
+      <img src="photo/visa.png" class="logo_op"  alt="error">
+      <img src="photo/webmoney.png" class="web"  alt="error">
+  
+    </div>
+   <div class="hr_fr"></div><div class="grg"><div class="grf"> ДОСТАВКА ПО ВСІЙ УКРАЇНІ</div>
+    <div class="pr">Новою поштою</div>
+    <div class="pr">Укр. поштою</div>
+    <div class="pr">Доставка кур’єром</div></div>
+    <div class="hr_fr"></div>
+    <div class="grg"><div class="grf">ОПЛАТА</div>
+    <div class="pr_op">Одразу після оформлення замовлення</div>
+    <div class="pr_op">Після отримання</div>
+    <div class="pr_op">Оплата частинами</div></div>
+    <div class="hr_fr"></div>
+    <div class="grg"><div class="grf">КОНТАКТИ</div>
+    <div class="pr_op">Кременчук</div>
+    <div class="pr_op">вулиця Шевченка 22 </div>
+    <div class="pr_op">(063)-646-65-48</div>
+    <div class="pr_op">sweet.moment@shop.ua</div></div>
+  </footer>
+</body>
+</html>

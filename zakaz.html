@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Замовлення</title>
+  <style>
+    body {
+      background: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      height: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap
+    }
+    
+  .header{
+      justify-content: center;align-items: center;
+      flex-direction: row; display:flex; 
+  }
+
+    sub-menu {
+      width: 100%;
+      height: 51px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sub {
+      width: 65%;
+      min-width: 600px;
+      height: 51px;
+      background: #CB4B6E;
+      border-radius: 45px;
+      border: 1px #CB4B6E solid;
+      display: flex;
+      color: white;
+      font-family: Lucida Sans;
+      font: medium;
+      font-size: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 20px
+    }
+
+   footer {
+      width: 100%;
+      height: 240px;
+      display:flex;
+      background: #CB4B6E;
+      align-content:center;
+      align-items:center;
+      justify-content:center;
+     margin-top:10%;
+  }
+  
+    .content {
+      width: 100% ;
+      height: 1000px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ads {
+      background: #C4C4C4;
+      min-width: 70px;
+      max-height:2000px;
+      width: 10%;
+      height: 1000px;
+      display: inline;
+      justify-content:left ;
+      flex-direction: row;
+      align-content:left;
+    }
+
+    .logo {
+      height: 98px;
+      width: 145px;
+      border: 3px solid;
+      border-radius: 15px;
+      display: flex;
+      margin-bottom:5px;
+      margin-right:40px;
+    }
+
+    input[type=search] {
+      width: 350px;
+      height: 32px;
+      border: 1px solid black;
+      border-radius: 18px;
+}
+
+    .tre{
+      width:38px; height:32px;display:flex;; margin-left:5px
+    }
+
+    .cl{
+      color:white; display:flex; font-family:Lucida Sans; width: 400px; font: 10px;height:100px;
+    }
+    
+    .grg{
+  color:white; display:flex; font-family:Lucida Sans;font:semibold; align-items:baseline; width: 142px; height:116px;flex-direction:column;margin-right:30px
+  }
+
+    .grf{
+  color:white; display:flex; font-family:Lucida Sans;font:regular; margin:4px; margin-bottom:10px; font:12px; font-weight:bold;
+}
+
+    .pr_op{
+  margin:1%; font:10px;margin-top:-1px
+}
+
+    .pr{
+  margin:3px; font:10px;
+}
+
+    .hr_fr{
+      width:1px; height:120px; background:white;margin-right:7px;margin-top:25px
+    }
+    
+    .logo_op{
+      width:65px; height:35px;display:flex;
+  }
+
+    .web{ 
+      width:100px; height:35px;display:flex;
+}
+    
+    .oplat{
+    display:flex;
+  }
+
+ 
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="header"><img src="photo/1.png" class="logo" alt="error">
+      <label for="search"></label><input type="search" id="search"><div class="tre"><img src="photo/search.png" alt="error"></div>
+    </div>
+  </header>
+  <sub-menu>
+    <div class="sub">
+      <a href="index.html" style="color: white">Головна</a>
+      <a href="pro_nas.html" style="color: white">Про нас</a>
+      <a href="zakaz.html" style="color: white">Замовлення товару</a>
+      <a href="news.html" style="color: white">Новини</a>
+      <a href="kontakt.html" style="color: white">Контакти</a>
+    </div>
+  </sub-menu>
+  <content>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      <div class="row">
+        <div class="col-50">
+        <h3>Створення адреси</h3>
+          <label for="fname"><i class="fa fa-user"></i> Повне ім'я</label>
+        <input type="text" id="fname" name="firstname">
+        <label for="email"><i class="fa fa-envelope"></i> Електронна адреса</label>
+        <input type="text" id="email" name="email">
+        <label for="adr"><i class="fa fa-address-card-o"></i> Адреса проживання</label>
+        <input type="text" id="adr" name="address">
+        <label for="city"><i class="fa fa-institution"></i> Місто</label>
+        <input type="text" id="city" name="city">
+    </div>
+     <div class="col-50">
+        <h3>Оплата</h3>
+        <label for="cname">Ім'я власника</label>
+        <input type="text" id="cname" name="cardname">
+        <label for="ccnum">Номер картки</label>
+        <input type="text" id="ccnum" name="cardnumber">
+        <label for="expmonth">Останній місяць</label>
+        <input type="text" id="expmonth" name="expmonth">
+        <div class="row">
+          <div class="col-50">
+            <label for="expyear">Останній рік</label>
+            <input type="text" id="expyear" name="expyear">
+         </div>
+           <div class="col-50">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv">
+          </div>
+      </div>
+      </div></div>
+       <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Кошик <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p>Цукерки O'Damer Lukas 2,5кг <span class="price">277.50 грн</span></p>
+      <p>Всього <span class="price" style="color:black"><b>277.50 грн</b></span></p>
+    </div>
+  </div>
+</div>
+  </content>
+  <footer>
+    <div class="oplat" >
+      <img src="photo/paypal.png" class="logo_op" alt="error">
+      <img src="photo/Mastercard-logo.svg" class="logo_op" alt="error">
+      <img src="photo/visa.png" class="logo_op" alt="error">
+      <img src="photo/webmoney.png" class="web" alt="error">
+  
+    </div>
+   <div class="hr_fr"></div><div class="grg"><div class="grf"> ДОСТАВКА ПО ВСІЙ УКРАЇНІ</div>
+    <div class="pr">Новою поштою</div>
+    <div class="pr">Укр. поштою</div>
+    <div class="pr">Доставка кур’єром</div></div>
+    <div class="hr_fr"></div>
+    <div class="grg"><div class="grf">ОПЛАТА</div>
+    <div class="pr_op">Одразу після оформлення замовлення</div>
+    <div class="pr_op">Після отримання</div>
+    <div class="pr_op">Оплата частинами</div></div>
+    <div class="hr_fr"></div>
+    <div class="grg"><div class="grf">КОНТАКТИ</div>
+    <div class="pr_op">Кременчук</div>
+    <div class="pr_op">вулиця Шевченка 22 </div>
+    <div class="pr_op">(063)-646-65-48</div>
+    <div class="pr_op">sweet.moment@shop.ua</div></div>
+  </footer>
+</body>
+</html>
